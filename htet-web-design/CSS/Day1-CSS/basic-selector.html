@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selector</title>
+    <style>
+        /* Universal selector */
+        *{
+            color: green;
+        }
+        /* Type Selector */
+        h1{
+            color: red;
+        }
+       /* Class Selector */
+        .para-style{
+            color: blue;
+            background-color: yellow;
+        }
+        h2.para-style{
+            color: red;
+        }
+        .center{
+            text-align: center;
+        }
+        /* Id Selector */
+        #heading2{
+            background: violet;
+        }
+        input{
+            background-color: red;
+        }
+
+        /* Attribute selector */
+        input[type="password"]{
+            background-color: yellow;
+        }
+        h1, h2, h3{
+            color: red;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Hello CSS</h1>
+    <p class="para-style">Paragraph 1</p>
+    <p class="para-style">Paragraph 2</p>
+    <h2 class="para-style center">Heading2</h2>
+    <h2 id="heading2">Heading</h2>
+    <input type="text">
+    <input type="email">
+    <input type="password">
+  
+</body>
+</html>
