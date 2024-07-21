@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 500px;
+        height: 400px;
+        background-color: green;
+        margin: 50px auto;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .container img {
+        width: inherit;
+        height: inherit;
+      }
+      .detail {
+        text-align: center;
+        background-color: rgba(255, 0, 0, 0.7);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        color: #fff;
+      }
+      .detail h2 {
+        margin-bottom: 5px;
+      }
+      .para {
+        height: 500px;
+        background-color: brown;
+      }
+      button {
+        position: fixed;
+        right: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt=""
+      />
+      <div class="detail">
+        <h2>Heading 2</h2>
+        <p>This is paragraph</p>
+      </div>
+    </div>
+    <button>Go to top</button>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+      quibusdam iste dicta culpa praesentium nemo voluptatem vitae explicabo,
+      provident quo consequatur voluptatibus autem. Soluta minima modi rem,
+      minus at voluptatem.
+    </p>
+  </body>
+</html>
