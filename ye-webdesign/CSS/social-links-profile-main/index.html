@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root {
+        --main-color: white;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      @font-face {
+        font-family: "Inter", serif;
+        src: url("assets/fonts/Inter.ttf") format(truetype);
+      }
+      .inter-weight400 {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+      }
+      .inter-weight600 {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+      }
+      .inter-weight700 {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Inter", serif;
+        font-size: 14px;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        background-color: hsl(0, 0%, 8%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container .card {
+        background-color: hsl(0, 0%, 12%);
+        width: 320px;
+        border-radius: 10px;
+        padding: 24px;
+        text-align: center;
+      }
+      .container .card img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: block;
+      }
+      .container .card h1 {
+        font-size: 20px;
+        color: var(--main-color);
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      .container .card .address {
+        color: hsl(75, 94%, 57%);
+      }
+      .container .card .para {
+        margin: 20px 0;
+        color: var(--main-color);
+      }
+      .social-links a {
+        text-decoration: none;
+        color: var(--main-color);
+        display: block;
+        background-color: hsl(0, 0%, 20%);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+      .social-links a:hover {
+        background-color: hsl(75, 94%, 57%);
+        color: hsl(0, 0%, 12%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="assets/images/avatar-jessica.jpeg" alt="avatar" />
+        <h1 class="inter-weight600">Jessica Randall</h1>
+        <p class="inter-weight600 address">London, United Kingdom</p>
+        <p class="para inter-weight400">
+          &quot;Front-end developer and avid reader.&quot;
+        </p>
+        <div class="social-links">
+          <a href="#" class="inter-weight600">GitHub</a>
+          <a href="" class="inter-weight600">Frontend Mentor</a>
+          <a href="" class="inter-weight600">LinkedIn</a>
+          <a href="" class="inter-weight600">Twitter</a>
+          <a href="" class="inter-weight600">Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
