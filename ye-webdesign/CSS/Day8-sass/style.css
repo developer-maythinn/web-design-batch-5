@@ -1,0 +1,42 @@
+.buttonStyles, button, .container-card .card button {
+  background-color: aqua;
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-card .card h1 {
+  color: aqua;
+}
+.container-card .card p {
+  color: red;
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  height: 60vh;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  height: 100vh;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4400ff;
+  height: 50vh;
+}/*# sourceMappingURL=style.css.map */
