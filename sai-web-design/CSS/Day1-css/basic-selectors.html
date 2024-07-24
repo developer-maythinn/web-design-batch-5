@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Universal selector */
+      * {
+        color: green;
+      }
+
+      /* type selector */
+      h1 {
+        color: red;
+      }
+      /* class selector */
+      .para-styles {
+        color: brown;
+        background-color: gray;
+      }
+      /* id selector */
+      #para1 {
+        background-color: yellow;
+      }
+
+      /* attribute selector */
+      input {
+        background-color: yellow;
+      }
+      input[type="email"] {
+        background-color: green;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <p id="para1">Para 1</p>
+    <p id="para2" class="para-styles">Para 2</p>
+    <h2 class="para-styles">Heading 2</h2>
+    <input type="text" />
+    <input type="email" />
+    <input type="password" />
+  </body>
+</html>
