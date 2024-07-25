@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Netflix Clone</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -11,15 +11,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="icon"
+      href="https://images.pexels.com/photos/27001883/pexels-photo-27001883/free-photo-of-a-white-car-is-driving-down-a-city-street.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <div class="header">
-        <img src="netflix.svg" alt="logo" />
-        <button>Sign In</button>
+        <img src="netflix.svg" class="logo" alt="logo" />
+        <button class="sign-in">Sign In</button>
       </div>
       <img
+        class="bgImg"
         alt=""
         aria-hidden="true"
         data-uia="nmhp-card-hero+background+image"
@@ -31,6 +36,7 @@
         "
         class="default-ltr-cache-1jxs5rh e13sg9vu0"
       />
+      <div class="overlay"></div>
       <div class="detail">
         <h1>Unlimited movies, TV shows, and more</h1>
         <h4>Watch anywhere. Cancel anytime.</h4>
@@ -38,7 +44,7 @@
           Ready to watch? Enter your email to create or restart your membership.
         </p>
         <div class="form">
-          <input type="email" />
+          <input type="email" placeholder="Email address" />
           <button>Get Started <i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
