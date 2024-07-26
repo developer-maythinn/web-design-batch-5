@@ -147,6 +147,7 @@
         width: 100%;
         h1{
             font-size: 2rem;
+            // font-size: clamp(2rem, 2.5vw, 3rem);
         }
         h4{
             margin: 1rem 0 0;
@@ -179,6 +180,68 @@
                 margin-top: 16px;
                 font-size: 1.125rem;
                 font-weight: 500;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container{
+        .bgImg{
+            height: 50vh;
+        }
+        .overlay{
+            height: 50vh;
+        }
+        .detail{
+            max-width: 80%;
+            inset: 0;
+            margin: auto;
+            height: 15vh;
+            
+            .form{
+                input{
+                    width: 60%;
+                }
+                button{
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px)  {
+    .container{
+        .bgImg{
+            height: 100vh;
+        }
+        .overlay{
+            height: 100vh;
+        }
+        .detail{
+            max-width: 80%;
+            inset: 0;
+            margin: auto;
+            height: 15vh;
+            h1{
+                font-size: 3rem;
+                font-weight: 900;
+            }
+            h4{
+                font-size: 1.5rem;
+            }
+            p{
+                font-size: 1.25rem;
+            }
+            .form{
+                input{
+                    width: 40%;
+                }
+                button{
+                    
+                }
             }
         }
     }

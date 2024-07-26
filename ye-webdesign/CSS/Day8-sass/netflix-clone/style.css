@@ -164,4 +164,49 @@
   margin-top: 16px;
   font-size: 1.125rem;
   font-weight: 500;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container .bgImg {
+    height: 50vh;
+  }
+  .container .overlay {
+    height: 50vh;
+  }
+  .container .detail {
+    max-width: 80%;
+    inset: 0;
+    margin: auto;
+    height: 15vh;
+  }
+  .container .detail .form input {
+    width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .container .bgImg {
+    height: 100vh;
+  }
+  .container .overlay {
+    height: 100vh;
+  }
+  .container .detail {
+    max-width: 80%;
+    inset: 0;
+    margin: auto;
+    height: 15vh;
+  }
+  .container .detail h1 {
+    font-size: 3rem;
+    font-weight: 900;
+  }
+  .container .detail h4 {
+    font-size: 1.5rem;
+  }
+  .container .detail p {
+    font-size: 1.25rem;
+  }
+  .container .detail .form input {
+    width: 40%;
+  }
 }/*# sourceMappingURL=style.css.map */
