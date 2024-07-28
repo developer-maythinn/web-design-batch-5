@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Descendant selector */
+      /* div p {
+        background-color: green;
+      } */
+
+      /* Child  */
+      /* div > p {
+        background-color: aqua;
+      } */
+
+      /* Adjacent sibling */
+      /* div + p {
+        background-color: aqua;
+      } */
+
+      /* General sibling */
+      div ~ p {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <p>P</p>
+    <div>
+      <p>P1 in Div</p>
+      <p>P2 in Div</p>
+      <section>
+        <p>P1 in section</p>
+      </section>
+    </div>
+    <p>P1 Outside</p>
+    <p>P1 Outside</p>
+  </body>
+</html>
