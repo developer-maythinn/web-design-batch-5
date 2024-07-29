@@ -5,6 +5,9 @@ import Header from "./components/Header";
 import Bag from "./components/Props-children/Bag";
 import User from "./components/Props-children/User";
 import React from "react";
+import HeaderStyle, { Nav } from "./components/Styling/HeaderStyle";
+import EventIssues from "./components/Events/EventIssues";
+import ModeToggler from "./components/Events/ModeToggler";
 function App() {
   const userData = [
     { name: "Su Su", age: 25 },
@@ -14,6 +17,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <ModeToggler />
+        <EventIssues />
+        <HeaderStyle />
+        <Nav />
         <img src={logo} className="App-logo" alt="logo" />
         {/* <h1>Hello React</h1> */}
         {/* <Button />
