@@ -8,6 +8,10 @@ import React from "react";
 import HeaderStyle, { Nav } from "./components/Styling/HeaderStyle";
 import EventIssues from "./components/Events/EventIssues";
 import ModeToggler from "./components/Events/ModeToggler";
+import InputWithHook from "./components/Hooks/InputWithHook";
+import UseStateHook from "./components/Hooks/UseStateHook";
+import InputForm from "./components/Hooks/InputForm";
+import Promo from "./components/Props-drilling/Promo";
 function App() {
   const userData = [
     { name: "Su Su", age: 25 },
@@ -17,11 +21,15 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ModeToggler />
+        <Promo />
+        {/* <InputForm /> */}
+        {/* <UseStateHook /> */}
+        {/* <InputWithHook /> */}
+        {/* <ModeToggler />
         <EventIssues />
         <HeaderStyle />
         <Nav />
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" /> */}
         {/* <h1>Hello React</h1> */}
         {/* <Button />
         <Header name="Header 1" />
@@ -38,7 +46,7 @@ function App() {
         <Bag>
           <h2>Hello Bag 2</h2>
         </Bag> */}
-        {userData &&
+        {/* {userData &&
           userData.length > 0 &&
           userData.map((user, index) => {
             return (
@@ -46,7 +54,7 @@ function App() {
                 <User user={user}></User>
               </React.Fragment>
             );
-          })}
+          })} */}
       </header>
     </div>
   );
