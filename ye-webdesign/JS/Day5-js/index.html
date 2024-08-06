@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello 1</h1>
+    <h1>Hello 2</h1>
+    <p id="demo">Demo</p>
+    <div class="intro">1</div>
+    <div class="intro">2</div>
+    <div class="intro">3</div>
+    <script>
+      //   let myDiv = document.createElement("div");
+      //   let textNode = document.createTextNode("Hello JS");
+      //   myDiv.appendChild(textNode);
+      //   let bodyElement = document.body;
+      //   bodyElement.appendChild(myDiv);
+
+      //   console.log(document.getElementById("demo"));
+      //   console.log(document.getElementsByTagName("h1")[1]);
+      //   console.log(document.getElementsByClassName("intro")[1]);
+      //   console.log(document.querySelectorAll("p#demo")[0]);
+
+      //   document.getElementById("demo").style.backgroundColor = "red";
+      //   document.getElementsByClassName("intro")[1].style.color = "blue";
+
+      let classItems = document.getElementsByClassName("intro");
+
+      for (let i = 0; i < classItems.length; i++) {
+        // (classItems[i].style.color = "red"),
+        //   (classItems[i].style.fontSize = "30px"),
+        //   (classItems[i].style.backgroundColor = "pink");
+        classItems[i].style.cssText = `
+        color: blue;
+        background-color: pink;
+        `;
+      }
+    </script>
+  </body>
+</html>
