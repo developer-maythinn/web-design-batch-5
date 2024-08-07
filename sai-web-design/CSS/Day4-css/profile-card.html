@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: pink;
+        width: 300px;
+        height: 350px;
+        margin: 50px auto;
+        box-shadow: 10px 10px 10px #000, -10px -15px 10px red;
+      }
+      .container .box {
+        height: 30%;
+        background-color: brown;
+      }
+      .container .main-box {
+        text-align: center;
+        position: relative;
+        padding: 0;
+      }
+      .container .main-box img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid red;
+        position: absolute;
+        top: -20%;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .container .main-box h1 {
+        padding-top: 4rem;
+        text-shadow: 5px 5px 20px #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div class="main-box">
+        <img
+          src="https://images.pexels.com/photos/3764119/pexels-photo-3764119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="img"
+        />
+        <h1>Helen</h1>
+        <p>Developer</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error
+          suscipit aperiam consectetur!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
