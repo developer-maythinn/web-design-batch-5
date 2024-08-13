@@ -10,14 +10,21 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <section class="container-fluid position-relative">
+      <nav
+        class="navbar navbar-expand-lg position-absolute start-0 w-100 bg-transparent px-lg-5 py-3 navbar-light"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand text-light" href="#">Navbar</a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler custom-btn"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -33,20 +40,121 @@
           >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link text-white" href="#">Features</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link text-white" href="#">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    </div>
+
+      <div class="row text-light main-section d-flex align-items-center">
+        <div class="col-lg-6">
+          <div class="text-center p-5 text-white">
+            <h1>Cover your page</h1>
+            <p class="text-white">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              sunt dolore ipsa, a quibusdam, enim officia eveniet nihil amet
+              nulla tempora, vel eaque modi ad quae quo aperiam voluptate harum!
+            </p>
+
+            <button class="btn btn-primary">Learn More</button>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img
+            class="img-fluid w-50"
+            src="https://img.freepik.com/free-vector/graphic-design-workspace-background-isometric-style_23-2147799817.jpg?t=st=1723520177~exp=1723523777~hmac=001e693364527b4c63f7e02c88fa00049a8950dcafc774282b22512271483070&w=740"
+            alt="img"
+          />
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1723523086 d-none d-lg-block">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <section class="container profile">
+      <div class="row py-5">
+        <div class="col-lg-6 text-center">
+          <img
+            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="img-fluid profile-img"
+            alt="img"
+          />
+        </div>
+        <div class="col-lg-6">
+          <div class="my-5">
+            <h2>Profile</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              asperiores dolores quo nihil quam! Rerum, voluptatibus cum sit,
+              corporis incidunt ea provident blanditiis dolorem quis, est
+              corrupti veritatis voluptas molestiae?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-container container-fluid d-flex align-items-center">
+      <div class="row px-lg-4">
+        <div class="col-lg-3 col-md-6 text-center d-flex align-items-stretch">
+          <div class="icon-box mt-4">
+            <i class="bx bxl-dribbble fs-2"></i>
+            <h5>Card Title</h5>
+            <p>Voluptatum deleniti atque corrupti quos dolores et quas</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center d-flex align-items-stretch">
+          <div class="icon-box mt-4">
+            <i class="bx bx-file fs-2"></i>
+            <h5>Card Title</h5>
+            <p>Voluptatum deleniti oluptatum deleniti atque corrupti</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center d-flex align-items-stretch">
+          <div class="icon-box mt-4">
+            <i class="bx bxs-objects-vertical-bottom fs-2"></i>
+            <h5>Card Title</h5>
+            <p>
+              Voluptatum deleniti atque corrupti quos dolores et quas molestias
+              excepturi sint occaecati
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center d-flex align-items-stretch">
+          <div class="icon-box mt-4 mb-4">
+            <i class="bx bx-cable-car fs-2"></i>
+            <h5>Card Title</h5>
+            <p>
+              Voluptatum deleniti atque corrupti quos dolores et quas molestias
+              excepturi sint occaecati cupiditate
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
