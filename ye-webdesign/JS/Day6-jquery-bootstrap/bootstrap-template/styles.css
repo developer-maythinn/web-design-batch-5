@@ -5,6 +5,10 @@
   color: #162234;
 }
 
+a {
+  text-decoration: none;
+}
+
 .custom-btn {
   background-color: #fff;
 }
@@ -57,6 +61,51 @@
   padding: 30px;
   border-radius: 15px;
   border-bottom: 3px solid #fff;
+}
+
+.team-container .owl-carousel .member-card {
+  height: 400px;
+  position: relative;
+}
+.team-container .owl-carousel .member-card .box {
+  background-image: linear-gradient(90deg, rgb(32, 227, 231) 50%, #162234 50%);
+  height: 180px;
+}
+.team-container .owl-carousel .member-card .custom-card-content {
+  background-color: #fff;
+  border-radius: 40px 40px 0px 0px;
+  bottom: 0px;
+}
+.team-container .owl-carousel .member-card .custom-card-content img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+  position: absolute;
+  inset: 0;
+  top: -40px;
+  border: 1px solid;
+}
+
+footer {
+  background-color: #162234;
+}
+footer .social {
+  display: flex;
+}
+footer .social a {
+  background-color: rgb(240, 176, 28);
+  margin: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .social a i {
+  color: #fff;
 }
 
 @media (min-width: 992px) {
