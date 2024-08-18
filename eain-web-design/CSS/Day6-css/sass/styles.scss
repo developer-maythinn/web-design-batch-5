@@ -1,0 +1,27 @@
+@import "./variables";
+@import "./buttonStyles";
+body{
+    background-color: pink;
+}
+
+
+.card-container{
+    h1{
+        color: $mainColor;
+    }
+    p{
+        @extend .buttonStyles
+    }
+    button{
+        @extend .buttonStyles
+    }
+    div{
+        h1{
+            color: $secondaryColor;
+            font-size: $fontSizeM;
+        }
+    }
+}
+button{
+    @extend .buttonStyles
+}

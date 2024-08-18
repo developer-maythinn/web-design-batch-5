@@ -1,0 +1,18 @@
+.buttonStyles, button, .card-container button, .card-container p {
+  background-color: green;
+  padding: 5px 15px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+body {
+  background-color: pink;
+}
+
+.card-container h1 {
+  color: green;
+}
+.card-container div h1 {
+  color: red;
+  font-size: 20px;
+}/*# sourceMappingURL=styles.css.map */
