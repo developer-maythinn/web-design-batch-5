@@ -86,7 +86,7 @@ a{
             }
         }
         p{
-
+          padding: 0 16px;
         }
         button{
           background-color: transparent;
@@ -95,6 +95,189 @@ a{
           padding: 5px 10px;
           border-radius: 5px;
           margin-top: 10px;
+          &:hover{
+            background-color: yellow;
+            color: black;
+            transition-duration: 1s;
+            font-weight: 600;
+          }
         }
     }
+}
+
+.about{
+  padding: 50px;
+  display: flex;
+  .left-side{
+    img{
+      width: 100%;
+    }
+  }
+  .right-side{
+    padding: 0 20px;
+    i{
+      font-size: 4rem;
+      color: gray;
+    }
+    .custom-icon{
+      text-align: right;
+      display: block;
+    }
+    h2{
+      text-align: center;
+    }
+    p{
+      text-indent: 50px;
+      line-height: 1.8;
+    }
+  }
+}
+
+.team{
+  padding: 20px;
+  h2{
+    text-align: center;
+    text-decoration: overline aqua;
+  }
+  .card-container{
+    display: flex;
+    .card{
+      padding: 20px;
+      background-image: linear-gradient(45deg, yellow, aqua);
+      margin: 20px;
+      .img-container{
+        width: 100%;
+        overflow: hidden;
+        img{
+          width: inherit;
+          transition: 1s;
+        }
+        &:hover{
+          img{
+            transform: scale(1.3);
+          }
+        }
+      }
+      .card-content{
+        text-align: center;
+        h3{
+          padding-top: 10px;
+        }
+        p{
+  
+        }
+      }
+    }
+  }
+
+}
+
+.contact{
+  background-color: #1e1c1d;
+  padding: 2rem;
+  
+  h2{
+    color: #fff;
+    text-align: center;
+  }
+  .contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    form{
+  
+      input, textarea{
+        display: block;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 20px;
+      
+      }
+      textarea{
+        height: 200px;
+      }
+      :not(input[type="submit"]) {
+        width: 400px
+      }
+    }
+  }
+  
+}
+footer{
+  background-color: #2a2626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  p{
+    color: #fff;
+  }
+  .social-icons{
+    display: flex;
+    a{
+      
+      margin: 0 10px;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     &:nth-child(1){
+      background-color: #3b5998;
+     }
+     &:nth-child(2){
+      background-color: #1ea1f1;
+     }
+     &:nth-child(3){
+      background-color: #784f99;
+     }
+     &:nth-child(4){
+      background-color: #2578af;
+     }
+    }
+  }
+}
+@media (max-width: 767px) { // mobile
+
+  .main-container{
+    header{
+      nav{
+        flex-direction: column;
+        padding: 10px 20px;
+        ul{
+          li{
+            padding: 20px 10px;
+          }
+        }
+      }
+    }
+  }
+  .card-container{
+    flex-direction: column;
+  }
+  .contact{
+    .contact-form{
+      height: 60vh;
+      form{
+        :not(input[type="submit"]) {
+          width: 300px;
+        }
+      }
+    }
+  }
+  footer{
+    flex-direction: column;
+    .social-icons{
+      margin-top: 10px;
+    }
+  }
+}
+@media (max-width: 991px){
+  .about{
+    flex-direction: column;
+    padding: 20px;
+  }
 }

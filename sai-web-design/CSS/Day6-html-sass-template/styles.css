@@ -83,6 +83,9 @@ a {
 .main-container .detail h1 span {
   color: yellow;
 }
+.main-container .detail p {
+  padding: 0 16px;
+}
 .main-container .detail button {
   background-color: transparent;
   color: yellow;
@@ -90,4 +93,163 @@ a {
   padding: 5px 10px;
   border-radius: 5px;
   margin-top: 10px;
+}
+.main-container .detail button:hover {
+  background-color: yellow;
+  color: black;
+  transition-duration: 1s;
+  font-weight: 600;
+}
+
+.about {
+  padding: 50px;
+  display: flex;
+}
+.about .left-side img {
+  width: 100%;
+}
+.about .right-side {
+  padding: 0 20px;
+}
+.about .right-side i {
+  font-size: 4rem;
+  color: gray;
+}
+.about .right-side .custom-icon {
+  text-align: right;
+  display: block;
+}
+.about .right-side h2 {
+  text-align: center;
+}
+.about .right-side p {
+  text-indent: 50px;
+  line-height: 1.8;
+}
+
+.team {
+  padding: 20px;
+}
+.team h2 {
+  text-align: center;
+  -webkit-text-decoration: overline aqua;
+          text-decoration: overline aqua;
+}
+.team .card-container {
+  display: flex;
+}
+.team .card-container .card {
+  padding: 20px;
+  background-image: linear-gradient(45deg, yellow, aqua);
+  margin: 20px;
+}
+.team .card-container .card .img-container {
+  width: 100%;
+  overflow: hidden;
+}
+.team .card-container .card .img-container img {
+  width: inherit;
+  transition: 1s;
+}
+.team .card-container .card .img-container:hover img {
+  transform: scale(1.3);
+}
+.team .card-container .card .card-content {
+  text-align: center;
+}
+.team .card-container .card .card-content h3 {
+  padding-top: 10px;
+}
+.contact {
+  background-color: #1e1c1d;
+  padding: 2rem;
+}
+.contact h2 {
+  color: #fff;
+  text-align: center;
+}
+.contact .contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.contact .contact-form form input, .contact .contact-form form textarea {
+  display: block;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+.contact .contact-form form textarea {
+  height: 200px;
+}
+.contact .contact-form form :not(input[type=submit]) {
+  width: 400px;
+}
+
+footer {
+  background-color: #2a2626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+footer p {
+  color: #fff;
+}
+footer .social-icons {
+  display: flex;
+}
+footer .social-icons a {
+  margin: 0 10px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-icons a:nth-child(1) {
+  background-color: #3b5998;
+}
+footer .social-icons a:nth-child(2) {
+  background-color: #1ea1f1;
+}
+footer .social-icons a:nth-child(3) {
+  background-color: #784f99;
+}
+footer .social-icons a:nth-child(4) {
+  background-color: #2578af;
+}
+
+@media (max-width: 767px) {
+  .main-container header nav {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+  .main-container header nav ul li {
+    padding: 20px 10px;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .contact .contact-form {
+    height: 60vh;
+  }
+  .contact .contact-form form :not(input[type=submit]) {
+    width: 300px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer .social-icons {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .about {
+    flex-direction: column;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=styles.css.map */
