@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-element {
+  flex-basis: 100%;
+}
+
+.column-element {
+  flex-basis: 50%;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .column-element {
+    flex-basis: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

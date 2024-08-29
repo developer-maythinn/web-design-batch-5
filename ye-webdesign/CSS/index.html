@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-element {
+        position: relative;
+        width: 200px;
+        height: 100px;
+        background-color: #3498db;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        overflow: hidden;
+      }
+
+      .hover-element {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #e74c3c;
+        color: white;
+        text-align: center;
+        line-height: 100px;
+        transform: translateY(100%);
+        opacity: 0;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+      }
+
+      .main-element:hover .hover-element {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      h2:hover + p {
+        background-color: yellow; /* Change this color as needed */
+      }
+      h2:hover ~ h3 {
+        background-color: lightblue; /* Change this color as needed */
+      }
+    </style>  
+  </head>
+  <body>
+    <div class="main-element">
+      Hover me!
+      <div class="hover-element">I appear from the bottom!</div>
+    </div>
+    <h2>Hover over me</h2>
+    <p>
+      This paragraph's background will change when hovering over the h2 above.
+    </p>
+    <h3>Another heading</h3>
+  </body>
+</html>
