@@ -1,3 +1,9 @@
-body {
-  background-color: pink;
+.card-container .card h1 {
+  color: rgb(93, 42, 165);
+}
+.card-container .card p {
+  color: rgb(93, 42, 165);
+}
+.card-container .card button {
+  background-color: rgb(93, 42, 165);
 }/*# sourceMappingURL=styles.css.map */
