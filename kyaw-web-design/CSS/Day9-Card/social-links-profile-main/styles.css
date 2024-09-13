@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Inter";
+  src: url("assets/fonts/Inter.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .card {
+  width: 300px;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: hsl(0, 0%, 12%);
+  text-align: center;
+  padding: 25px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+}
+.container .card .profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.container .card h1 {
+  font-size: 1.2rem;
+  margin: 15px 0 5px;
+}
+.container .card .place {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+}
+.container .card .text {
+  margin: 15px 0;
+  font-size: 12px;
+}
+.container .card .links a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  display: block;
+  background-color: hsl(0, 0%, 20%);
+  padding: 8px 0;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.container .card .links a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}/*# sourceMappingURL=styles.css.map */
