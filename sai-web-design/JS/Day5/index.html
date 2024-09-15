@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <h1>Hello 1</h1>
+    <h1>Hello 2</h1>
+    <!-- p.intro*3 -->
+    <p class="intro">Intro 1</p>
+    <p class="intro">Intro 2</p>
+    <p class="intro">Intro 3</p>
+    <h2 class="intro">heading intro</h2>
+
+    <script>
+      // document.getElementById("demo").innerHTML = "Hello"
+      // console.log(document.getElementsByTagName('h1')[1])
+      // document.getElementsByTagName("h1")[0].innerHTML = "JS 1"
+      //   console.log(document.getElementsByClassName("intro")[3]);
+      // console.log(document.querySelectorAll("h2.intro")[0])
+
+      //   let myDiv = document.createElement("div");
+      //   let textNode = document.createTextNode("Hello World");
+      //   myDiv.appendChild(textNode); // <div>Hello World</div>
+
+      //   let myBody = document.body;
+      //   myBody.appendChild(myDiv);
+
+      //   console.log(myDiv);
+      //   console.log(textNode);
+
+      //   let h2Element = document.getElementsByClassName("intro")[3];
+      //   h2Element.style.color = "red";
+      //   h2Element.style.backgroundColor = "yellow";
+
+      //   console.log(h2Element);
+
+      let classItems = document.getElementsByClassName("intro");
+      console.log(classItems);
+      for (let i = 0; i < classItems.length; i++) {
+        //   classItems[i].style.color = "red";
+        classItems[i].style.cssText = `color: blue; background-color: pink`;
+      }
+      //   for (let item of classItems) {
+      //     item.style.color = "green";
+      //   }
+    </script>
+  </body>
+</html>
