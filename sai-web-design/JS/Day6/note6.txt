@@ -1,0 +1,27 @@
+
+**************************************************************
+https://www.w3schools.com/js/js_date_methods.asp
+
+**************************************************************
+JavaScript Timing Events
+https://www.w3schools.com/js/js_timing.asp
+
+**************************************************************
+JSON
+https://www.w3schools.com/js/js_json_intro.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
+Json format
+{ "name":"John", "age":30, "city":"New York"}
+JSON.stringify to convert objects into JSON.
+JSON.parse to convert JSON back into an object.
+
+JSON supports following data types:
+Objects { ... }
+Arrays [ ... ]
+Primitives:
+strings,
+numbers,
+boolean values true/false,
+null.
+
+

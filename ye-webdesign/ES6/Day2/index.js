@@ -12,6 +12,7 @@ async function fetchProducts() {
     });
     const result = await apiResponse.json();
     console.log(result);
+    console.log(result?.products?.length > 0);
     if (result?.products?.length > 0) {
       renderProducts(result?.products);
     }
