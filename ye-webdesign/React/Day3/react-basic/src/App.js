@@ -8,6 +8,7 @@ import InputFormUseState from "./components/Hooks/InputFormUseState";
 import InputWithUseState from "./components/Hooks/InputWithUseState";
 import SimpleUseState from "./components/Hooks/SimpleUseState";
 import UseStateCompontent from "./components/Hooks/UseStateCompontent";
+import CRUD from "./components/Mini-projects/CRUD";
 import Bag from "./components/Props/Bag";
 import Fruit from "./components/Props/Fruit";
 import ComponentA from "./components/PropsDrillingAndUseContext/ComponentA";
@@ -38,7 +39,8 @@ function App() {
       {/* <SimpleUseState /> */}
       {/* <InputWithUseState /> */}
       {/* <InputFormUseState /> */}
-      <ComponentA />
+      {/* <ComponentA /> */}
+      <CRUD></CRUD>
     </div>
   );
 }
