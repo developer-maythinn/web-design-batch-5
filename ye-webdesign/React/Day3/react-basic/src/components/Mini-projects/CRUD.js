@@ -13,15 +13,15 @@ function CRUD() {
     }
   };
   const updateItem = (index) => {
-    const updateItems =    ()) => (i === index ? editText : item));
+    const updateItems = items.map((item, i) => (i === index ? editText : item));
     console.log(updateItems);
     setItems(updateItems);
     setEditIndex(null);
     setEditText("");
   };
   const deleteItem = (index) => {
-    setItems(items.filter((item, i) => i !== index))
-  }
+    setItems(items.filter((item, i) => i !== index));
+  };
   return (
     <>
       <h1>CRUD(Create, Read, Update, Delete)</h1>
