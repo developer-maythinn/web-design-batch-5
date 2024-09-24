@@ -9,6 +9,7 @@ import InputWithUseState from "./components/Hooks/InputWithUseState";
 import SimpleUseState from "./components/Hooks/SimpleUseState";
 import UseStateCompontent from "./components/Hooks/UseStateCompontent";
 import CRUD from "./components/Mini-projects/CRUD";
+import ReCRUD from "./components/Mini-projects/ReCRUD";
 import Bag from "./components/Props/Bag";
 import Fruit from "./components/Props/Fruit";
 import ComponentA from "./components/PropsDrillingAndUseContext/ComponentA";
@@ -40,7 +41,8 @@ function App() {
       {/* <InputWithUseState /> */}
       {/* <InputFormUseState /> */}
       {/* <ComponentA /> */}
-      <CRUD></CRUD>
+      {/* <CRUD></CRUD> */}
+      <ReCRUD />
     </div>
   );
 }
