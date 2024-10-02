@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import sum, { sub, text } from "./common";
 import ClickEvent from "./components/Events/ClickEvent";
@@ -13,6 +14,11 @@ import ReCRUD from "./components/Mini-projects/ReCRUD";
 import Bag from "./components/Props/Bag";
 import Fruit from "./components/Props/Fruit";
 import ComponentA from "./components/PropsDrillingAndUseContext/ComponentA";
+import About from "./pages/about";
+import Contact from "./pages/contact";
+import Navbar from "./components/Navbar";
+import Hook from "./pages/hook";
+import Projects from "./pages/projects";
 
 function App() {
   return (
@@ -42,7 +48,15 @@ function App() {
       {/* <InputFormUseState /> */}
       {/* <ComponentA /> */}
       {/* <CRUD></CRUD> */}
-      <ReCRUD />
+      {/* <ReCRUD /> */}
+      <Navbar />
+
+      <Routes>
+        <Route path="/hook" element={<Hook />}></Route>
+        <Route path="/projects" element={<Projects />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
     </div>
   );
 }
