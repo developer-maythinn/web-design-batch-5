@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <p id="demo"></p>
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1> -->
+    <p class="intro">intro 1</p>
+    <p class="intro">intro 2</p>
+    <p class="intro">intro 3</p>
+    <h2 class="intro">h2 intro</h2>
+    <h3 class="intro">h3 intro</h3>
+    <script>
+      //   document.getElementById("demo").innerHTML = "Hello World";
+      //   document.getElementsByTagName("h1")[0].innerHTML = "H1"
+      //     console.log(document.getElementsByTagName("h1")[0])
+      //     console.log(document.getElementsByTagName("h1")[1])
+
+      let introClass = document.getElementsByClassName("intro");
+      //   introClass[0].style.color = "red";
+      //   introClass[1].style.color = "red";
+      //   introClass[2].style.color = "red";
+      //   introClass[3].style.color = "red";
+      //   introClass[4].style.color = "red";
+
+      //   for(let item of introClass){
+      //       item.style.color = "blue"
+      //   }
+
+      // console.log(introClass);
+      // console.log(document.querySelectorAll("h3.intro")[0])
+      let h3 = document.querySelectorAll("h3.intro")[0];
+    //   h3.style.color = "blue";
+    //   h3.style.backgroundColor = "pink";
+      h3.style.cssText = `color: red; background-color: pink; padding: 20px`;
+    </script>
+  </body>
+</html>

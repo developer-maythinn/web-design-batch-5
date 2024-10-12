@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="img"
+      src="https://images.pexels.com/photos/18936031/pexels-photo-18936031/free-photo-of-korean-bbq-restaurant.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      alt="img"
+    />
+    <button onclick="changeImage()">Change Image</button>
+    <script>
+      function changeImage() {
+        let orgImg = document.getElementById("img");
+        orgImg.src =
+          "https://images.pexels.com/photos/28874283/pexels-photo-28874283/free-photo-of-minimal-workspace-with-laptop-and-coffee-mug.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load";
+      }
+    </script>
+  </body>
+</html>
