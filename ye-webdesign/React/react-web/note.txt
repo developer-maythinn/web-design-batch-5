@@ -1,0 +1,15 @@
+For add router
+
+npm i react-router-dom
+
+Add <BrowserRouter></BrowserRouter> in index.js for wrap <App /> and remove <React.StrictMode>
+
+In App.js 
+    <Routes>
+        <Route path="/hooks" element={<Hooks />}></Route>
+    </Routes>
+
+Create Hooks component in pages folder
+
+Create Nav in components folder
+ <Link to="/hooks">Hooks</Link>
