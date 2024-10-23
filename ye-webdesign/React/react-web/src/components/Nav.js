@@ -11,6 +11,15 @@ function Nav() {
         <li>
           <Link to="/hooks/useEffect">UseEffect</Link>
         </li>
+        <li>
+          <Link to="/hooks/useRef">UseRef</Link>
+        </li>
+        <li>
+          <Link to="/hooks/useMemo">UseMemo</Link>
+        </li>
+        <li>
+          <Link to="/hooks/useReducer">UseReducer</Link>
+        </li>
       </ul>
     </>
   );
