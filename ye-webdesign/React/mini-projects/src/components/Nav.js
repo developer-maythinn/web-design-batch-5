@@ -2,11 +2,13 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
 import ToggleThemeBtn from "./ToggleThemeBtn";
+import { BookContext } from "../context/BookContext";
 
 function Nav() {
   const themeValues = useContext(ThemeContext);
   const { isLightMode, light, dark, toggleTheme } = themeValues;
   const theme = isLightMode ? light : dark;
+
   return (
     <>
       <nav className="nav-styles" style={{ background: theme.ui }}>

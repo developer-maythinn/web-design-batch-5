@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import BookShop from "./pages/BookShop";
 import Nav from "./components/Nav";
 import ThemeContextProvider from "./context/ThemeContext";
+import BookContextProvider from "./context/BookContext";
 
 function App() {
   return (

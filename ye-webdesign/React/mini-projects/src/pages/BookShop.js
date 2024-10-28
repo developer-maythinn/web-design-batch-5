@@ -1,11 +1,15 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import BookContextProvider from "../context/BookContext";
+import BookList from "../components/BookList";
 
 function BookShop() {
-  const themeValues = useContext(ThemeContext);
-  console.log(themeValues);
-
-  return <div>BookShop</div>;
+  return (
+    <>
+      <BookContextProvider>
+        <BookList />
+      </BookContextProvider>
+    </>
+  );
 }
 
 export default BookShop;

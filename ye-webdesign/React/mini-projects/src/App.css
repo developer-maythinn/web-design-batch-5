@@ -42,9 +42,10 @@
     transform: rotate(360deg);
   }
 }
-
-.nav-styles ul{
+ul{
   list-style: none;
+}
+.nav-styles ul{
   display: flex;
   justify-content: center;
 }
@@ -58,4 +59,9 @@ a{
 .nav-styles ul .btn-container{
   position: absolute;
   right: 0;
+}
+
+.book-list{
+  padding: 20px;
+  margin: 20px;
 }
