@@ -70,4 +70,39 @@
   background-color: transparent;
   -webkit-backdrop-filter: blur(0.8rem);
           backdrop-filter: blur(0.8rem);
+}
+
+.team-section .box {
+  height: 350px;
+  background-image: linear-gradient(45deg, #fdd044 0%, #fed350 53%, #a2f1de 20%, #74d8bb 100%);
+}
+.team-section .box .profile-box {
+  background-color: #fff;
+}
+.team-section .box .profile-box img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -2.2rem;
+}
+
+footer {
+  background-color: #141e30;
+}
+footer .social-icons a {
+  width: 30px;
+  height: 30px;
+}
+footer .social-icons a:nth-child(1) {
+  background-color: #4267b2;
+}
+footer .social-icons a:nth-child(2) {
+  background-color: #784f99;
+}
+footer .social-icons a:nth-child(3) {
+  background-color: #1da1f2;
+}
+footer .social-icons a:nth-child(4) {
+  background-color: #2578af;
 }/*# sourceMappingURL=styles.css.map */

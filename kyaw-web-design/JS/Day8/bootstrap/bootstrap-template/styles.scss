@@ -78,3 +78,48 @@
         backdrop-filter: blur(0.8rem);
     }
 }
+
+.team-section{
+    .box{
+        height: 350px;
+        background-image: linear-gradient(
+            45deg,
+            #fdd044 0%,
+            #fed350 53%,
+            #a2f1de 20%,
+            #74d8bb 100%
+          );
+        .profile-box{
+            background-color: #fff;
+            img{
+                width: 70px;
+                height: 70px;
+                object-fit: cover;
+                margin-top: -2.2rem;
+        }
+        }
+    }
+}
+
+footer{
+    background-color: #141e30;
+    .social-icons{
+        a{
+            width: 30px;
+            height: 30px;
+            &:nth-child(1){
+                background-color: #4267b2;
+            }
+            &:nth-child(2){
+                background-color: #784f99;
+            }
+            &:nth-child(3){
+                background-color: #1da1f2;
+            }
+            &:nth-child(4){
+                background-color: #2578af;
+            }
+        }
+        
+    }
+}
